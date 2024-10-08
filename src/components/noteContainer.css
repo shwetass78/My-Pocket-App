@@ -19,7 +19,7 @@
 
 /* Heading with fixed background */
 .heading {
-  flex: 2;
+  flex: 3;
   background: #001f8b;
   color: white;
   display: flex;
@@ -124,6 +124,7 @@
   } */
   .heading {
     padding-left: 15px;
+    flex: 2;
   }
   .heading h2 {
     font-size: 22px;
