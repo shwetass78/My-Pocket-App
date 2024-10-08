@@ -1,0 +1,208 @@
+/* Popup styles */
+.group-popup {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 99;
+}
+
+.popup-content {
+  background: white;
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  width: 500px;
+  height: auto;
+}
+
+.popupHeading {
+  font-size: 25px;
+  margin-bottom: 10px;
+}
+
+.groupNameText {
+  align-items: center;
+  display: flex;
+  justify-content: flex-start;
+}
+
+.popup-content form {
+  display: flex;
+  flex-direction: column;
+  margin-top: 20px;
+}
+
+.popup-content input {
+  /* margin-bottom: 10px; */
+  padding-left: 20px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 15px;
+  width: 100%;
+  letter-spacing: 1px;
+  width: 60%;
+  margin-left: 10px;
+}
+
+.two {
+  display: flex;
+  width: 100%;
+  justify-content: flex-end;
+  /* justify-content: space-between; */
+}
+
+/* Color selection styles */
+.color-picker {
+  /* margin-bottom: 15px; */
+  display: flex;
+  gap: 30px;
+  margin-top: 20px;
+}
+
+.color-picker h4 {
+  margin-bottom: 5px;
+  font-size: 1.2rem;
+}
+
+.color-options {
+  display: flex;
+  justify-content: space-between; /* Space color circles evenly */
+  gap: 10px;
+}
+
+.color-circle {
+  width: max-content;
+  border-radius: 50%;
+  cursor: pointer;
+  border: 2px solid transparent; /* Initial border */
+  transition: border-color 0.2s ease;
+}
+
+.color-circle.selected {
+  border-color: black; /* Border to indicate selected color */
+}
+
+.createBtn {
+  padding: 8px 12px;
+  background-color: #001f8b;
+  color: white;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  width: 100px;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+
+button:focus {
+  outline: none;
+}
+
+/* Color selection styles */
+.color-picker {
+  margin-bottom: 15px;
+}
+
+.color-picker h4 {
+  margin-bottom: 5px;
+  font-size: 25px;
+}
+
+.color-options {
+  display: flex;
+  justify-content: space-between;
+}
+
+.color-circle {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  cursor: pointer;
+  border: 2px solid transparent;
+  transition: border-color 0.2s ease;
+}
+
+.color-circle.selected {
+  border-color: black; /* Border to indicate selected color */
+}
+
+.label-1 {
+  font-size: 25px;
+  width: 32%;
+  font-weight: 700;
+}
+
+/* ----------------------------- */
+
+@media (max-width: 500px) {
+  .popup-content {
+    width: 70%;
+    height: 220px;
+  }
+
+  .label-1 {
+    font-size: 16px;
+    width: 40%;
+  }
+  .popup-content input {
+    width: 50%;
+    margin-left: 15px;
+    padding-left: 10px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    font-size: 10px;
+  }
+  .color-picker h4 {
+    width: 50%;
+    font-size: 15px;
+  }
+  .color-options {
+    width: 55%;
+    gap: 5px;
+  }
+  .color-circle {
+    width: 20px;
+    height: 20px;
+  }
+  .color-picker {
+    gap: 10px;
+  }
+  .two {
+    justify-content: center;
+    margin-top: 20px;
+  }
+  .createBtn {
+    width: 200px;
+    font-size: 18px;
+  }
+  .list {
+    padding-left: 25px;
+  }
+  .listItem {
+    font-size: 25px;
+    font-weight: 600;
+    gap: 20px;
+  }
+  .group-list {
+    gap: 15px;
+  }
+}
+
+@media (max-width: 355px) {
+  .popup-content input {
+    width: 55%;
+    margin-left: 0;
+  }
+  .label-1 {
+    width: 45%;
+  }
+}

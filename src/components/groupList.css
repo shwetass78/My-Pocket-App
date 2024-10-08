@@ -1,0 +1,30 @@
+.groupListContainer {
+  display: flex;
+  width: 100%;
+}
+
+.group-list {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  gap: 25px;
+}
+
+.listItem {
+  padding: 10px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  border-radius: 8px;
+  font-size: 20px;
+  transition: background-color 0.3s;
+}
+
+.listItem.selected {
+  background-color: rgb(242, 240, 240);
+}
+
+/* .listItem:hover {
+  background-color: #f0f0f0; 
+} */
